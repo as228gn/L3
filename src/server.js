@@ -11,7 +11,7 @@ import session from 'express-session'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { sessionOptions } from './config/sessionOptions.js'
-import { router } from './routes/homeRouter.js'
+import { router } from './routes/router.js'
 
 
 // Get the path of the current module's directory.
