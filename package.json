@@ -2,11 +2,20 @@
   "name": "l3",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
+    "start": "node --env-file=.env src/server.js",
+    "dev": "nodemon --inspect --env-file=.env src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Anna Ståhlberg",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.18.1"
+  }
 }

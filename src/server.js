@@ -8,11 +8,10 @@
 import express from 'express'
 import expressLayouts from 'express-ejs-layouts'
 import session from 'express-session'
-import logger from 'morgan'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { sessionOptions } from './config/sessionOptions.js'
-import { router } from './routes/router.js'
+import { router } from './routes/homeRouter.js'
 
 
 // Get the path of the current module's directory.
@@ -23,9 +22,6 @@ const baseURL = process.env.BASE_URL || '/'
 
 // Create Express application.
 const app = express()
-
-// Set up a morgan logger using the dev format for log entries.
-app.use(logger('dev'))
 
 // View engine setup.
 app.set('view engine', 'ejs')
