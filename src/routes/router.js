@@ -7,13 +7,11 @@
 import express from 'express'
 import http from 'node:http'
 import { router as homeRouter } from './homeRouter.js'
-import { router as countingRouter } from './countingRouter.js'
 import { router as trigonometryRouter } from './trigonometryRouter.js'
 
 export const router = express.Router()
 
 router.use('/', homeRouter)
-router.use('/counting', countingRouter)
 router.use('/trigonometry', trigonometryRouter)
 
 // Catch 404 (ALWAYS keep this as the last route).
