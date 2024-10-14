@@ -6,13 +6,14 @@
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV=production node src/server.js",
-    "dev": "nodemon --inspect --env-file=.env src/server.js",
+    "dev": "node --env-file=.env src/server.js",
     "test": "node Test/testApp.js"
   },
   "keywords": [],
   "author": "Anna Ståhlberg",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.21.1",
     "express-ejs-layouts": "^2.5.1",
