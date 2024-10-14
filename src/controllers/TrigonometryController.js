@@ -1,4 +1,4 @@
-import { RightAngledTriangle } from '../module/RightAngledTriangle.js'
+import { RightAngledTriangle } from 'geometry_ltwo'
 
 export class TrigonometryController {
   #triangle = new RightAngledTriangle()

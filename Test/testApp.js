@@ -5,9 +5,9 @@
  * @version 1.0.0
  */
 
-import { RightAngledTriangle } from '../src/module/RightAngledTriangle.js'
-import { Rectangle } from '../src/module/Rectangle.js'
-import { Circle } from '../src/module/Circle.js'
+import { RightAngledTriangle } from 'geometry_ltwo'
+import { Rectangle } from 'geometry_ltwo'
+import { Circle } from 'geometry_ltwo'
 
 /**
  * Test for all functions in the public interface for RightAngledTriangle.

@@ -1,17 +1,25 @@
-<h2>Base</h2>
-
-<form method="post" action="./trigonometry/base">
-  <div>Please fill in the fields.</div>
-  <div>
-    <div>Hight</div>
-    <input type="number" id="hight" name="hight" value="<%= viewData?.hightSide %>">
-    <div>Hypotenuse</div>
-    <input type="number" id="hypotenuse" name="hypotenuse" value="<%= viewData?.hypotenuseSide %>">
+<h2 class="head-top">Base</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-md">
+      <img src="./img/Triangle.png" alt="Triangle">
+    </div>
+    <div class="col-md" class="input-form">
+      <form method="post" action="./trigonometry/base">
+        <div class="fill-in">Please fill in the fields.</div>
+        <div>
+          <div>Hight</div>
+          <input type="number" id="hight" name="hight" value="<%= viewData?.hightSide %>">
+          <div>Hypotenuse</div>
+          <input type="number" id="hypotenuse" name="hypotenuse" value="<%= viewData?.hypotenuseSide %>">
+        </div>
+        <div>
+          <button type="submit" class="calculate">Calculate</button>
+        </div>
+      </form>
+      <div class="answer">
+        <%= viewData?.base %>
+      </div>
+    </div>
   </div>
-  <div>
-    <button type="submit">Post</button>
-  </div>
-</form>
-
-<div><%= viewData?.base %></div>
-
+</div>
