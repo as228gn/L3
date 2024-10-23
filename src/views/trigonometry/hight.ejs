@@ -9,9 +9,9 @@
         <div class="fill-in">Please fill in the fields.</div>
         <div>
           <div>Base</div>
-          <input type="number" id="base" name="base" value="<%= viewData?.baseSide %>">
+          <input type="number" id="base" name="base" value="<%= viewData?.baseSide %>" required>
           <div>Hypotenuse</div>
-          <input type="number" id="hypotenuse" name="hypotenuse" value="<%= viewData?.hypotenuseSide %>">
+          <input type="number" id="hypotenuse" name="hypotenuse" value="<%= viewData?.hypotenuseSide %>" required>
         </div>
         <div>
           <button type="submit" class="calculate">Calculate</button>

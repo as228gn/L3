@@ -1,3 +1,8 @@
+/**
+ * @file Defines the TrigonometryController class.
+ * @module TrigonometryController
+ * @author Anna Ståhlberg
+ */
 import { RightAngledTriangle } from 'geometry_ltwo'
 
 export class TrigonometryController {
@@ -13,18 +18,23 @@ export class TrigonometryController {
   }
 
   areaPost(req, res, next) {
-    const { base, hight, hypotenuse } = req.body
-    const baseN = parseInt(base);
-    const hightN = parseInt(hight);
-    const hypotenuseN = parseInt(hypotenuse);
-    const result = this.calcArea(baseN, hightN, hypotenuseN)
-    const viewData = {
-      baseSide: base,
-      hightSide: hight,
-      hypotenuseSide: hypotenuse,
-      area: result
+    try {
+      const { base, hight, hypotenuse } = req.body
+      const baseN = parseInt(base);
+      const hightN = parseInt(hight);
+      const hypotenuseN = parseInt(hypotenuse);
+      const result = this.calcArea(baseN, hightN, hypotenuseN)
+      const viewData = {
+        baseSide: base,
+        hightSide: hight,
+        hypotenuseSide: hypotenuse,
+        area: result
+      }
+      res.render('trigonometry/area', { viewData })
+    } catch (error) {
+      const viewData = {}
+      res.render('trigonometry/area', { viewData })
     }
-    res.render('trigonometry/area', { viewData })
   }
 
   calcArea(base, hight, hypotenuse) {
@@ -41,16 +51,21 @@ export class TrigonometryController {
   }
 
   hypotenusePost(req, res, next) {
-    const { base, hight } = req.body
-    const baseN = parseInt(base);
-    const hightN = parseInt(hight);
-    const result = this.calcHypotenuse(baseN, hightN)
-    const viewData = {
-      baseSide: base,
-      hightSide: hight,
-      hypotenuse: result
+    try {
+      const { base, hight } = req.body
+      const baseN = parseInt(base);
+      const hightN = parseInt(hight);
+      const result = this.calcHypotenuse(baseN, hightN)
+      const viewData = {
+        baseSide: base,
+        hightSide: hight,
+        hypotenuse: result
+      }
+      res.render('trigonometry/hypotenuse', { viewData })
+    } catch (error) {
+      const viewData = {}
+      res.render('trigonometry/hypotenuse', { viewData })
     }
-    res.render('trigonometry/hypotenuse', { viewData })
   }
 
   calcHypotenuse(base, hight) {
@@ -66,18 +81,23 @@ export class TrigonometryController {
   }
 
   perimeterPost(req, res, next) {
-    const { base, hight, hypotenuse } = req.body
-    const baseN = parseInt(base);
-    const hightN = parseInt(hight);
-    const hypotenuseN = parseInt(hypotenuse);
-    const result = this.calcPerimeter(baseN, hightN, hypotenuseN)
-    const viewData = {
-      baseSide: base,
-      hightSide: hight,
-      hypotenuseSide: hypotenuse,
-      perimeter: result
+    try {
+      const { base, hight, hypotenuse } = req.body
+      const baseN = parseInt(base);
+      const hightN = parseInt(hight);
+      const hypotenuseN = parseInt(hypotenuse);
+      const result = this.calcPerimeter(baseN, hightN, hypotenuseN)
+      const viewData = {
+        baseSide: base,
+        hightSide: hight,
+        hypotenuseSide: hypotenuse,
+        perimeter: result
+      }
+      res.render('trigonometry/perimeter', { viewData })
+    } catch (error) {
+      const viewData = {}
+      res.render('trigonometry/perimeter', { viewData })
     }
-    res.render('trigonometry/perimeter', { viewData })
   }
 
   calcPerimeter(base, hight, hypotenuse) {
@@ -94,16 +114,21 @@ export class TrigonometryController {
   }
 
   hightPost(req, res, next) {
-    const { base, hypotenuse } = req.body
-    const baseN = parseInt(base);
-    const hypotenuseN = parseInt(hypotenuse);
-    const result = this.calcHight(baseN, hypotenuseN)
-    const viewData = {
-      baseSide: base,
-      hypotenuseSide: hypotenuse,
-      hight: result
+    try {
+      const { base, hypotenuse } = req.body
+      const baseN = parseInt(base);
+      const hypotenuseN = parseInt(hypotenuse);
+      const result = this.calcHight(baseN, hypotenuseN)
+      const viewData = {
+        baseSide: base,
+        hypotenuseSide: hypotenuse,
+        hight: result
+      }
+      res.render('trigonometry/hight', { viewData })
+    } catch (error) {
+      const viewData = {}
+      res.render('trigonometry/hight', { viewData })
     }
-    res.render('trigonometry/hight', { viewData })
   }
 
   calcHight(base, hypotenuse) {
@@ -119,16 +144,21 @@ export class TrigonometryController {
   }
 
   basePost(req, res, next) {
-    const { hight, hypotenuse } = req.body
-    const hightN = parseInt(hight);
-    const hypotenuseN = parseInt(hypotenuse);
-    const result = this.calcBase(hightN, hypotenuseN)
-    const viewData = {
-      hightSide: hight,
-      hypotenuseSide: hypotenuse,
-      base: result
+    try {
+      const { hight, hypotenuse } = req.body
+      const hightN = parseInt(hight);
+      const hypotenuseN = parseInt(hypotenuse);
+      const result = this.calcBase(hightN, hypotenuseN)
+      const viewData = {
+        hightSide: hight,
+        hypotenuseSide: hypotenuse,
+        base: result
+      }
+      res.render('trigonometry/base', { viewData })
+    } catch (error) {
+      const viewData = {}
+      res.render('trigonometry/base', { viewData })
     }
-    res.render('trigonometry/base', { viewData })
   }
 
   calcBase(hight, hypotenuse) {
@@ -144,16 +174,21 @@ export class TrigonometryController {
   }
 
   angleAPost(req, res, next) {
-    const { hight, hypotenuse } = req.body
-    const hightN = parseInt(hight);
-    const hypotenuseN = parseInt(hypotenuse);
-    const result = this.calcAngleA(hightN, hypotenuseN)
-    const viewData = {
-      hightSide: hight,
-      hypotenuseSide: hypotenuse,
-      angleA: result
+    try {
+      const { hight, hypotenuse } = req.body
+      const hightN = parseInt(hight);
+      const hypotenuseN = parseInt(hypotenuse);
+      const result = this.calcAngleA(hightN, hypotenuseN)
+      const viewData = {
+        hightSide: hight,
+        hypotenuseSide: hypotenuse,
+        angleA: result
+      }
+      res.render('trigonometry/angleA', { viewData })
+    } catch (error) {
+      const viewData = {}
+      res.render('trigonometry/angleA', { viewData })
     }
-    res.render('trigonometry/angleA', { viewData })
   }
 
   calcAngleA(hight, hypotenuse) {
@@ -169,16 +204,21 @@ export class TrigonometryController {
   }
 
   angleBPost(req, res, next) {
-    const { base, hypotenuse } = req.body
-    const baseN = parseInt(base);
-    const hypotenuseN = parseInt(hypotenuse);
-    const result = this.calcAngleB(baseN, hypotenuseN)
-    const viewData = {
-      baseSide: base,
-      hypotenuseSide: hypotenuse,
-      angleB: result
+    try {
+      const { base, hypotenuse } = req.body
+      const baseN = parseInt(base);
+      const hypotenuseN = parseInt(hypotenuse);
+      const result = this.calcAngleB(baseN, hypotenuseN)
+      const viewData = {
+        baseSide: base,
+        hypotenuseSide: hypotenuse,
+        angleB: result
+      }
+      res.render('trigonometry/angleB', { viewData })
+    } catch (error) {
+      const viewData = {}
+      res.render('trigonometry/angleB', { viewData })
     }
-    res.render('trigonometry/angleB', { viewData })
   }
 
   calcAngleB(base, hypotenuse) {
@@ -187,6 +227,5 @@ export class TrigonometryController {
     const angleB = Math.ceil(this.#triangle.getOppositeAngleWithOppositeSideAndHypotenuse())
     return angleB
   }
-
 
 }

@@ -59,4 +59,6 @@ Kan hända att appen kommer att användas till att fuska eller att barn/ungdomar
 
 ### 4.2 Lagar & Standarder
 
-Jag kommer ej hantera några användaruppgifter och behöver i det här fallet ej rätta mig efter GDPR.
+Jag kommer ej hantera några användaruppgifter och behöver i det här fallet ej rätta mig efter GDPR.  
+
+https://inc-marcella-abcdefghijk-42b7bac7.koyeb.app/
