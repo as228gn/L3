@@ -19,7 +19,7 @@
  
 ## 1. Funktionella krav
 
-* Ska kunna räkna ut alla sidor och vinklar.
+* Ska kunna räkna ut alla sidor och vinklar i en rätsidig triangel.
 * Fylla i dina kända värden, trycka på en knapp och få ett svar.
 * Finnas en bild på en triangel på varje sida så att man enkelt kan förstå vad man ska fylla i.
 * Finnas en home länk på alla sidor så att man enkelt kan komma tillbaka för att räkna något annat.
@@ -27,10 +27,9 @@
 ## 2. Ickefunktionella produktkrav
 
 * Finnas tester 
-* Ta fram design för spelet
-* Designen ska var vuxen
+* Designen ska vara mogen
 * Inga konton behöver skapas
-* Det ska vara lätt att förstå hur spelet appen går till
+* Det ska vara lätt att förstå hur appen går till
 
 ## 3. Organisationskrav
 

@@ -5,8 +5,8 @@
  * @see {@link https://github.com/expressjs/session}
  */
 
-import dotenv from 'dotenv';
-dotenv.config();
+// import dotenv from 'dotenv';
+// dotenv.config();
 
 // Options object for the session middleware.
 export const sessionOptions = {
