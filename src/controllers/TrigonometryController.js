@@ -304,7 +304,7 @@ export class TrigonometryController {
   #calcAngleB(base, hypotenuse) {
     this.#triangle.oppositeSide = base
     this.#triangle.hypotenuse = hypotenuse
-    const angleB = Math.ceil(this.#triangle.getOppositeAngleWithSide())
+    const angleB = Math.ceil(this.#triangle.getAdjacentAngleWithSide())
     return angleB
   }
 

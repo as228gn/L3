@@ -7,10 +7,8 @@
 
 import express from 'express'
 import expressLayouts from 'express-ejs-layouts'
-//import session from 'express-session'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
-//import { sessionOptions } from './config/sessionOptions.js'
 import { router } from './routes/router.js'
 
 
@@ -37,12 +35,6 @@ app.use(express.urlencoded({ extended: false }))
 
 // Serve static files.
 app.use(express.static(join(directoryFullName, '..', 'public')))
-
-// Setup and use session middleware (https://github.com/expressjs/session)
-if (process.env.NODE_ENV === 'production') {
-  app.set('trust proxy', 1) // trust first proxy
-}
-//app.use(session(sessionOptions))
 
 // Middleware to be executed before the routes.
 app.use((req, res, next) => {
