@@ -1,18 +1,3 @@
-# Trigonometry App
-An app that helps you calculate sides and angles on a right-angled triangle.
-
-## Adress
-https://inc-marcella-abcdefghijk-42b7bac7.koyeb.app/
-
-## Usage
-Chose what you would like to calculate and press that button.  
-Fill in all the fields displayed and press calculate. The answer will be shown below the calculate button. To calculate again or if you filled in the fields wrong you just fill in the fields again and press calculate.    
-To calculate something else you go to home and start over.
-
-## Contributing
-Feel free to contribute, for any questions, email as228gn@student.lnu.se
-
-## License
 MIT License
 
 Copyright (c) 2024 Anna Ståhlberg
@@ -34,9 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-## Links
-[Vision](/Vision.md)  
-[Kravspecifikation](/Kravspecifikation.md)  
-[Testspecifikation](/Test/TestSpecifikation.md)  
-[Reflektion](/reflection.md)

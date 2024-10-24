@@ -22,7 +22,7 @@ triangle.oppositeAngle = 39
 
 const areaTriangel = triangle.getArea()
 if (areaTriangel != 39.999979999995) {
-  console.log('getAreaWithThreeSides() in RightAngledTriangel failed')
+  console.log('getArea() in RightAngledTriangel failed')
 }
 
 const perimeterTriangel = triangle.getPerimeter()
@@ -37,42 +37,42 @@ if (hypotenuse != 12.806248474865697) {
 
 const oppositeSide = triangle.getOppositeSide()
 if (oppositeSide != 9.991996797437439) {
-  console.log('getOppositeSideWithAdjacentSideAndHypotenuse() in RightAngledTriangel failed')
+  console.log('getOppositeSide() in RightAngledTriangel failed')
 }
 
 const adjacentSide = triangle.getAdjacentSide()
 if (adjacentSide != 7.989993742175273) {
-  console.log('getAdjacentSideWithOppositeSideAndHypotenuse() in RightAngledTriangel failed')
+  console.log('getAdjacentSide() in RightAngledTriangel failed')
 }
 
 const oppositeAngle = triangle.getOppositeAngle()
 if (oppositeAngle != 39) {
-  console.log('getOppositeAngleWithAdjacentAngle() in RightAngledTriangel failed')
+  console.log('getOppositeAngle() in RightAngledTriangel failed')
 }
 
 const adjacentAngle = triangle.getAdjacentAngle()
 if (adjacentAngle != 51) {
-  console.log('getAdjacentAngleWithOppositeAngle() in RightAngledTriangel failed')
+  console.log('getAdjacentAngle() in RightAngledTriangel failed')
 }
 
 const adjacentSideA = triangle.getAdjacentSideWithAngle()
 if (adjacentSideA != 8.05530100543792) {
-  console.log('getAdjacentSideWithAdjacentAngleAndHypotenuse() in RightAngledTriangel failed')
+  console.log('getAdjacentSideWithAngle() in RightAngledTriangel failed')
 }
 
 const hypotenuseA = triangle.getHypotenuseWithAngle()
 if (hypotenuseA != 12.712125832525995) {
-  console.log('getHypotenuseWithAdjacentAngleAndSide() in RightAngledTriangel failed')
+  console.log('getHypotenuseWithAngle() in RightAngledTriangel failed')
 }
 
 const adjacentAngleA = triangle.getAdjacentAngleWithSide()
 if (adjacentAngleA != 51.31781254651057) {
-  console.log('getAdjacentAngleWithAdjacentSideAndHypotenus() in RightAngledTriangel failed')
+  console.log('getAdjacentAngleWithSide() in RightAngledTriangel failed')
 }
 
 const oppositeAngleA = triangle.getOppositeAngleWithSide()
 if (oppositeAngleA != 51.37516712694704) {
-  console.log('getOppositeAngleWithOppositeSideAndHypotenuse() in RightAngledTriangel failed')
+  console.log('getOppositeAngleWithSide() in RightAngledTriangel failed')
 }
 
 const increaseTriangle = triangle.increaseOrDecreaseByPercent(45)

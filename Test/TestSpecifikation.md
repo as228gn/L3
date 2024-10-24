@@ -15,7 +15,9 @@ Error in RightAngledTriangel caught successfully.
 Error in Rectangle caught successfully.  
 Error in Circle caught successfully.  
   
-Testing complete, any failed tests can be seen above.
+Testing complete, any failed tests can be seen above.  
+
+For test result see [Test Result](/Test/TestRapport.md)
 
 # Manual tests
 
@@ -363,4 +365,6 @@ For the app there are manual tests.
 * In inputfield base write p
 
 ### Expected 
-* Nothing, it shouldn´t be possible to write a character
+* Nothing, it shouldn´t be possible to write a character  
+
+For test result see [Test Result](/Test/TestRapport.md)
