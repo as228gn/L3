@@ -1,4 +1,7 @@
 # Trigonometry App
+![Front](/public/img/Front.png)  
+
+
 An app that helps you calculate sides and angles on a right-angled triangle.
 
 ## Adress
