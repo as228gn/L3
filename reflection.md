@@ -24,7 +24,7 @@ Boken gillar att man kastar fel som sedan fångas och det gör jag också. Tycke
 ![Error](public/img/Error.png)
 
 ## Boundaries (Chapter 8)
-Också ett svårt kapitel att ta till sig. Men jag förstår det som att det handlar om när man använder 3:dje parts kod. Alltså som t.ex. ett npm packet, där du inte vet hur den är skriven. Den ligger utanför dina gränser. I just det här fallet är det ju jag som har skrivit den koden också så jag vet precis hur den fungerar. Men om jag inte hade gjort det så är det smart att skriva tester så att man lär sig hur den fungerar, detta kostar inget och din egna kod blir robustare om du vet vad som kan gå fel. Man ska också minimera punkterna där den används. Här finns en testApp.js som testar modulens kod och det är så jag tänker man kan göra om man använder 3:dje parts kod i andra fall.
+Också ett svårt kapitel att ta till sig. Men jag förstår det som att det handlar om när man använder 3:dje parts kod. Alltså som t.ex. ett npm paket, där du inte vet hur den är skriven. Den ligger utanför dina gränser. I just det här fallet är det ju jag som har skrivit den koden också så jag vet precis hur den fungerar. Men om jag inte hade gjort det så är det smart att skriva tester så att man lär sig hur den fungerar, detta kostar inget och din egna kod blir robustare om du vet vad som kan gå fel. Man ska också minimera punkterna där den används. Här finns en testApp.js som testar modulens kod och det är så jag tänker man kan göra om man använder 3:dje parts kod i andra fall.
 ![Boundaries](public/img/Boundaries.png)
 
 ## Unit Tests (Chapter 9)
