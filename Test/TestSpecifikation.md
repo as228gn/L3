@@ -21,6 +21,11 @@ For test result see [Test Result](/Test/TestRapport.md)
 
 # Manual tests
 
+Manual tests have also been performed for the module when the object was created, properties were set, and functions were called. These have been documented in individual test reports for each class. See separate files.  
+[RightAngledTriangle](https://github.com/as228gn/L2/blob/main/Test/TestReportRightAngledTriangle.md)  
+[Rectangle](https://github.com/as228gn/L2/blob/main/Test/TestReportRectangle.md)  
+[Circle](https://github.com/as228gn/L2/blob/main/Test/TestReportCircle.md)  
+
 For the app there are manual tests.  
 
 ### Test suite - Go to page
@@ -67,6 +72,9 @@ For the app there are manual tests.
 * Test case 8.2 - Leave a input blank
 * Test case 8.3 - Print a negative number
 * Test case 8.4 - Print a character
+
+### Test suite - Home link
+* Test case 9.1 - There is a home link on every page.
 
 ## Test case 1.1: Navigate to Page
 
@@ -366,5 +374,18 @@ For the app there are manual tests.
 
 ### Expected 
 * Nothing, it shouldn´t be possible to write a character  
+
+## Test case 9.1: There is a home link on every page
+* Testcase 1:1
+* Testcase 2:1
+* Testcase 3:1
+* Testcase 4:1
+* Testcase 5:1
+* Testcase 6:1
+* Testcase 7:1
+* Testcase 8:1
+
+### Expected
+* There should be a home link on every page.
 
 For test result see [Test Result](/Test/TestRapport.md)

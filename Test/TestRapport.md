@@ -41,6 +41,7 @@ Färdig version av systemet testas.
 | TC8.2     | OK |
 | TC8.3     | OK |
 | TC8.4     | OK |
+| TC9.1     | OK |
 | COVERAGE & SUCCESS   | OK    |
 
 ## Kommentar

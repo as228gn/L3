@@ -4,11 +4,11 @@
 
 An app that helps you calculate sides and angles on a right-angled triangle.
 
-## Adress
+## Address
 https://inc-marcella-abcdefghijk-42b7bac7.koyeb.app/
 
 ## Usage
-Chose what you would like to calculate and press that button.  
+Choose what you would like to calculate and press that button.  
 Fill in all the fields displayed and press calculate. The answer will be shown below the calculate button. To calculate again or if you filled in the fields wrong you just fill in the fields again and press calculate.    
 To calculate something else you go to home and start over.
 

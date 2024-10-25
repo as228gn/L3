@@ -20,7 +20,7 @@
 
 ## 3. Organisationskrav
 
-Projektet ska vara skrivet med JavaScript i Node.js med Express.js som ramverk.   
+Projektet är skrivet i JavaScript med Node.js och Express.js som ramverk.   
 
 ### 3.1 Versionshantering
 
@@ -30,12 +30,10 @@ Git används som versionshanteringsstrategi. Ändringar pushas kontinuerligt upp
 
 Koden dokumenteras löpande med JSDocs.
 
-## 4. Externa krav
-
-### 4.1 Etiska krav
+### 4. Etiska krav
 
 Kan hända att appen kommer att användas till att fuska eller att barn/ungdomar inte lär sig trigonometri ordentligt då de slipper räkna själva.
 
-### 4.2 Lagar & Standarder
+### 4.1 Lagar & Standarder
 
 Jag kommer ej hantera några användaruppgifter och behöver i det här fallet ej rätta mig efter GDPR.  
